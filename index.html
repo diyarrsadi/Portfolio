@@ -2,84 +2,132 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio | Diyar Saadi</title>
-
-    <link rel="icon" type="png|image" href="/IMAGES/sailogo.png">
-    <link rel="stylesheet" href="/CSS/style.css">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
-
+    <title>Diyar Saadi Ali - Cybersecurity Expert</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            color: #f5f5f5;
+            background: #0f0f0f;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+        }
+        header {
+            background: #1e1e1e;
+            padding: 20px;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            color: #00ff00;
+        }
+        section {
+            padding: 20px;
+            border-bottom: 1px solid #333;
+        }
+        h2 {
+            color: #00ff00;
+        }
+        .skills, .achievements, .projects {
+            margin: 20px 0;
+        }
+        .map-container {
+            position: relative;
+            width: 100%;
+            height: 400px;
+            overflow: hidden;
+            background: #1e1e1e;
+            border: 2px solid #00ff00;
+        }
+        .map {
+            position: absolute;
+            width: 200%;
+            height: 200%;
+            background: url('https://via.placeholder.com/1200x800') no-repeat center center;
+            background-size: cover;
+            animation: moveMap 20s linear infinite;
+        }
+        @keyframes moveMap {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(-50%); }
+        }
+    </style>
 </head>
 <body>
-
-    <canvas id="matrixCanvas"></canvas>
-                                                        <!-- Matrix -->
-    <script src="/JAVASCRIPT/matrix.js"></script>
-
-    <header class="header">
-        <a href="#" class="logo">{Portfolio} </a>
-
-        <nav class="navbar">
-            <a href="#home" style="--i:1;" class="active">Home</a>
-            <a href="#about" style="--i:2;">About</a>
-            <a href="#skill" style="--i:3;">Skills</a>
-            <a href="#project" style="--i:4;">Projects</a>
-            <a href="#contact" style="--i:5;">Contact</a>
-        </nav>
+    <header>
+        <h1>Diyar Saadi Ali</h1>
+        <p>Cybersecurity Expert & Hacker</p>
     </header>
+    <div class="container">
+        <section>
+            <h2>🌐 Overview</h2>
+            <p>Welcome to the digital realm of Diyar Saadi Ali – a master of cybersecurity and digital forensics. With a rich background in malware analysis, memory forensics, and cybercrime investigations, Diyar is at the forefront of protecting the virtual world. Explore this portfolio to uncover the skills, experiences, and achievements that make Diyar a standout in the field.</p>
+        </section>
 
-    <section id="home" class="home">
+        <section>
+            <h2>🛠️ Skills & Expertise</h2>
+            <ul class="skills">
+                <li>Malware Analysis</li>
+                <li>Memory Forensics</li>
+                <li>Digital Forensics</li>
+                <li>Cybersecurity</li>
+                <li>Social Media Investigation</li>
+            </ul>
+        </section>
 
-        <div class="home-content" data-scroll data-scroll-speed="-5" >
-            <h3 class="mu">Salam, It's me</h3>
-            <h1>Diyar Saadi</h1>
-            <h3>And I'm a  <span class="pro-text">
-                <script>
-                   var typed = new Typed(".pro-text", {
-                      strings: [
-                        "Malware Reverse Engineer",
-                        "SOC Analyst",
-                        "Computer Offensive Security",
-                        "Penetration Tester",
-                        "Speaker",
-                        "Author"
-                      ],
-                      typeSpeed: 100,   
-                      backSpeed: 100,   
-                      backDelay: 1000,  
-                      loop: true        
-                    });
-                </script>
-            </span></h3>
-            
-            <p>  &emsp; &emsp;This portfolio highlights my passion for cybersecurity and my commitment to ethical practices. <br> <br>
-                &emsp; &emsp;I have developed a strong foundation in various areas of ethical hacking, positioning me to make significant contributions to the security of organizations and individuals., 
-                allowing me to contribute to the security of organizations and individuals. <br> <br>
-                &emsp; &emsp;Hired by University and School to remove the multi types malware in websites and computer devices.  
-            </p>
+        <section>
+            <h2>🎓 Certifications</h2>
+            <ul>
+                <li>SOC and Malware Analyst Certification</li>
+                <li>Social Media Investigation Methodology (McAfee Institute)</li>
+                <li>OSForensics Software Certification</li>
+                <li>Mobile Forensics Certification</li>
+				<li>Malware Analysis and Reverse Engineering</li>
+				<li>Malware Analysis Skils Path</li>
+				<li>Malware Analysis Fundamental</li>
+				<li>Advanced Malware Analysis</li>
+				<li>Malware Reverse Code Engineering</li>
+				<li>Incident Response Skils Path</li>
+				<li>FCF - Getting Started in Cybersecurity 2.0</li>
+				<li>FCF - Introduction to the Threat Landscape 2.0</li>
+				<li>Fortinet Certified Fundamentals in Cybersecurity</li>
+				<li>arcX Cyber Threat Intelligence 101</li>
+				<li>Foundation Of Threat Hunting</li>
+				<li>Introduction to Critical Infrastructure Protection</li>
+				<li>Dark Web Monitoring</li>
+				<li>Computer Hacking Forensic Investigator (CHFI)</li>
+				<li>Cyber Security Analyst</li>
+				<li>End User Cyber Security</li>
+				<li>End User Cyber Security</li>
+				<li>Dark Web Operations</li>
+				<li>Mobile Application Security Foundation</li
+				
+				
+				
+        </section>
 
-            <div class="home-sci">
-                <a href="https://github.com/SAI127001" target="_blank"><i class='bx bxl-github'></i></a>
-                <a href="https://www.linkedin.com/in/terukula-sai/" target="_blank"><i class='bx bxl-linkedin' ></i></a>
-                <a href="https://wa.me/9987886552" target="_blank"><i class='bx bxl-whatsapp'></i></a>
-                <a href="https://www.instagram.com/sai_127.0.0.1/" target="_blank"><i class='bx bxl-instagram'></i></a>
-            </div>
-           <a href="" class="btn-box" download="Sai CV/Resume">Download CV</a>
-        </div>
+        <section>
+            <h2>📝 Notable Achievements</h2>
+            <ul class="achievements">
+                <li>MITRE ATT&CK Contributor</li>
+                <li>Speaker at Sulaymenyah Cyber Security Conference</li>
+                <li>Accepted speaker at a conference on cyber warfare</li>
+				<li>Owner Of CVEs: CVE-2024-25400 and CVE-2024-25399 </li>
+            </ul>
+        </section>
 
-        <div class="home-img">
-            <div class="glowing-circle">
-                <span></span>
-                <span></span>
-                <div class="image">
-                    <img src="/IMAGES/saianon.png" alt="">
-                </div>
-            </div>
-        </div>
+        <section>
+            <h2>🔍 Projects & Research</h2>
+            <ul class="projects">
+                <li>Malfav Blog: A comprehensive blog dedicated to malware analysis tips, tricks, and research</li>
+               
+            </ul>
+        </section>
 
-    </section>
-
-</body> 
-</html> 
+       
+</body>
+</html>
